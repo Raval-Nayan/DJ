@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior: smooth;
+    
+}
+
+nav{
+ 
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ 
+}
+
+label.logo{
+    color: white;
+    font-size:35px ;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+
+nav ul{
+    width: 100%;
+    justify-content: flex-end;
+    gap: 2rem;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    padding: 80px;
+
+}
+
+nav li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+nav  a:hover{
+    color: antiquewhite;
+    /* padding: 10px; */
+    /* background-color: black; */
+   
+    border-top: 1px  solid black;
+    border-bottom: 1px  solid black;
+    padding: 5px 0px;
+
+    
+}
+
+nav li:first-child{
+    margin-right: auto;
+    font-size: 35px;
+   
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:#0082e6;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menubutton{
+    display: none;
+}
+
+.container{
+    background-image: url(./img/dj.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+   
+}
+
+.img_center_text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    
+}
+.center_text{
+    border: 2px silid red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.center_text,.p_text{
+   padding: 10px;
+    line-height: 20px;
+    color: white;
+}
+.center_text h1{
+    padding: 10px;
+     line-height: 20px;
+     color: white;
+ }
+
+ .music_section{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:blueviolet;
+    width: 100%;
+    height: 100%;
+    position: relative;
+   
+ }
+
+ .music_box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    
+
+ }
+
+ .mob_leptop{
+    position: absolute;
+    bottom: -60%;
+    
+ }
+
+ .music_box ,h3, p{
+    color: white;
+    padding: 15px 0px;
+   
+ }
+
+ .music_box , button{
+    padding: 10px;
+    border-radius: 5px;
+ }
+
+ 
+ .text_container{
+    width: 100%;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+ }
+
+ .mac_book{
+    position:absolute;
+    bottom: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+ }
+
+ .box{
+    width: 80%;
+ }
+
+ .text_container p{
+    color: black;
+ }
+ .btn{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    margin-top: 10px;
+ }
+
+ .Video_section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+ }
+ .video{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: -50%;
+    display: flex;
+   justify-content: center;
+  
+
+ }
+
+ .video_text{
+    position:absolute;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    bottom: -50%;
+    width: 100%;
+
+
+ }
+
+ .video_text ,h2 ,p{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+ }
+ 
+ #myVideo {
+  
+    min-width: 100%;
+    min-height: 500px;
+    
+  }
+video{
+    object-fit: fill;
+}
+
+@media(max-width:800px){
+
+    .hideonmobile{
+        display: none;
+    }
+
+    .menubutton{
+        display: block;
+    }
+    .mob_img{
+        width: 80%;
+       
+    }
+    .mac_img{
+        width: 80%;
+     }
+
+     .mac_book{
+        position:absolute;
+        bottom: -40%;
+     }
+
+     .video{
+        bottom: 0%;
+     }
+     .video_text{
+        bottom: -10%;
+     }
+
+}
+
+@media(max-width:400px){
+
+    .sidebar{
+       width: 100%;
+    }
+
+}
